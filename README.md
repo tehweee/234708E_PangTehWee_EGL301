@@ -1,12 +1,49 @@
-# Assignment 1
+# Welcome to Pang Teh Wee Personal Finance Management Application
 
-You will only need one file, ie, your node module, for this assignment.
+There are in total of **9 FUNCTIONS**
 
-In this readme file, describe how to use your node module. It could be similar to **app.js** from Lab2, where you call some functions in your node module and display the output. Describe how to setup your node module, if any. Describe how to call the functions, what parameters required and so on.
+* **setName(name)** - The function setName requires a parameter of String name. This function is use to set the user's name into the application
 
-You can press **Ctrl+Shift+V** in this file in Visual Studio Code to see a live preview of the readme file.
+* **addIncome(detail,income)** - The function addIncome requires two parameter of String detail and Int Income. This function is use to add in income that the user have earn with the income source details and the money earned
 
-For some tips in formatting text in readme file, refer to https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+* **addExpenses(detail,expenses)** - The function addExpenses requires two parameter of String detail and Int expenses. This function is use to add in expenses that the user have with the expenses details and the money required
 
-# References
-Provide the references that you have used to support your assignment. 
+* **setBudget(money)** - The function setBudget requires a parameter of Int money. This function is use to set a limit to the person's budget in order to promote saving. 
+
+* **deleteIncome(detail)** - The function deleteIncome requires a parameter of String detail. This function helps the user to remove income sources.
+
+* **deleteExpenses(detail)** - The function deleteExpenses requires a parameter of String detail. This function helps the user to remove expenses.
+
+* **updateIncome(detail,new_income)** - The function updateIncome requires two parameter of String detail and Int new_income. This function helps the user to update their income. 
+
+* **updateExpenses(detail,new_expenses)** - The function updateExpenses requires two parameter of String detail and Int new_expenses. This function helps the user to update their expenses. 
+
+* **displayAllInfo()** - The function displayAllInfo does not require any parameter. This function is used to display a summary of all the infomation including all the income sources, all the expenses, total income, total expenses, the budget cap, remaining balance after budget minus total expenses, and the total amount saved
+
+# Steps on setting up the app
+* Create a app.js file
+
+* Initialized connection using the code 
+**const finance = require("./PangTehWee_PersonalFinanaceManagement.js")**
+
+* Declare the name you want ( **setName(name)** )
+
+* All the the necessary income and expenses ( **addIncome(detail,income) & addExpenses(detail,expenses)** )
+
+* Set a budget ( **setBudget(money)** )
+
+* You are free to add any deleted or update function to test the functionality ( **deleteIncome(detail) , deleteExpenses(detail) , updateIncome(detail,new_income) , updateExpenses(detail,new_expenses)** )
+
+* Finally display all the information ( **displayAllInfo()** )
+
+# Run the App
+
+* Click on Terminal at the top left bar
+
+* Click on New Terminal
+
+* A new Terminal will open up
+
+* Type in **node app.js**
+
+* The information and data will be displayed on the Terminal and you are done!
